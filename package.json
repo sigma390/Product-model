@@ -1,9 +1,12 @@
 {
+  "homepage": "https://sigma390.github.io/Product-Model",
   "name": "tailwind-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "webpack serve",
     "build": "webpack"
   },
@@ -15,6 +18,7 @@
     "@babel/preset-env": "^7.16.11",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.12",
     "postcss-loader": "^6.2.1",
     "postcss-preset-env": "^7.4.4",
